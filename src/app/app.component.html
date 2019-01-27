@@ -4,25 +4,30 @@
     </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-card>
-    <mat-card-content>
-        <section>
-            <mat-form-field>
-                <mat-label>HH</mat-label>
-                <input matInput >
-            </mat-form-field>
-            <mat-form-field>
-                <mat-label>MM</mat-label>
-                <input matInput >
-            </mat-form-field>
-            <mat-form-field>
-                <mat-label>SS</mat-label>
-                <input matInput >
-            </mat-form-field>
-        </section>
-        <section>
-            <label>Progress:</label>
-            <mat-slider></mat-slider>
-        </section>
-    </mat-card-content>
-</mat-card>
+<mat-tab-group>
+
+    <mat-tab label="Count down">
+        <mat-card>
+            <mat-card-content>
+                <app-countdown></app-countdown>
+            </mat-card-content>
+        </mat-card>
+    </mat-tab>
+
+    <mat-tab label="Count up">
+        <mat-card>
+            <mat-card-content>
+                TODO Count up
+            </mat-card-content>
+        </mat-card>
+    </mat-tab>
+
+    <mat-tab label="Gym timer">
+        <mat-card>
+            <mat-card-content>
+                TODO Gym timer
+            </mat-card-content>
+        </mat-card>
+    </mat-tab>
+
+</mat-tab-group>
